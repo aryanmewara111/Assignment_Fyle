@@ -1,0 +1,708 @@
+/* common classes starts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+.secondary-heading {
+  color: #ff3147;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.primary-heading {
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+
+}
+
+.para {
+  font-size: 20px;
+  margin: auto;
+
+}
+
+/* common classes ends*/
+
+
+
+/* ****************************** Ḥome Section styles starts here ****************************** */
+
+
+
+#home-container {
+  /* border: 2px solid black; */
+  align-items: center;
+  padding: 50px 0px;
+}
+
+#home-container .img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#home-container .content {
+  padding: 20px;
+  margin: 20px;
+}
+
+#home-container .content h3 {
+  color: #ff3147;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#home-container .content h2 {
+  font-size: 3rem;
+
+}
+
+#home-container .btn {
+  background-color: #ff3147;
+  color: white;
+  margin-top: 20px;
+  background: #ff3147;
+  color: #ffffff;
+  border: 1px solid #ff3147;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  #home-container {
+    position: relative;
+  }
+
+  #home-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/HomePageImage.PNG');
+    background-position: center;
+    /* background-size: 100% 100%; */
+    background-repeat: repeat;
+    opacity: 0.5;
+    /* Adjust the opacity value as needed */
+    z-index: 1;
+  }
+
+  #home-container .content {
+    position: relative;
+    z-index: 2;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40%;
+    /* color: white; */
+  }
+}
+
+/* ****************************** Ḥome Section styles ends here ****************************** */
+
+
+
+/*  ****************************** Ḥome Section Conatct Us Form styles starts here ****************************** */
+
+#contactFormContainer {
+  position: absolute;
+  width: 35%;
+  height: 70%;
+  top: 30%;
+  left: 50%;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) scale(0.8);
+  border: 1px solid #ccc;
+  padding: 31px 32px 25.5px 32px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.8s, transform 0.8s;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+
+
+.col-2 {
+  font-size: 17px;
+}
+
+
+
+#contactFormContainer label {
+  display: inline;
+}
+
+#contactForm h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+}
+
+#closeFormBtn {
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: bold;
+  float: right;
+}
+
+.form-group {
+  position: relative;
+}
+
+#contactForm input[type="email"],
+#contactForm input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+#contactForm .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  color: #6F718F99;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+
+
+.mar-2 {
+  margin-top: 25px;
+}
+
+#contactForm input[type="email"],
+#contactForm input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 30px;
+}
+
+
+
+#contactForm input[type="email"],
+#contactForm input[type="text"] {
+  width: 60%;
+
+  padding: 8px;
+
+  border: none;
+  border-bottom: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+  display: inline-block;
+  margin-right: 2%;
+
+  outline: none;
+  font-size: 30px;
+  margin-top: 12px;
+  background: transparent;
+
+}
+
+#contactForm input:-webkit-autofill,
+#contactForm input:-webkit-autofill:hover,
+#contactForm input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+
+  background-color: transparent !important;
+
+}
+
+
+
+#workEmail {
+  width: 100% !important;
+  font-size: 30px;
+  margin-top: 12px;
+}
+
+
+
+#firstName {
+  flex-basis: 45%;
+}
+
+.checkbox-container {
+  display: inline-block !important;
+}
+
+#termsCheckbox {
+  color: red;
+}
+
+
+
+#contactForm button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: #ff3366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+/* Custom styles for the checkbox */
+.custom-checkbox {
+  width: 30px !important;
+  height: 30px;
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid red;
+
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.custom-checkbox:checked {
+  background-color: #fff;
+  background-color: #ff3366;
+  color: #fff;
+}
+
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 12px;
+  border: 1px solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Adjust the label styling if needed */
+.checkbox-container label {
+  font-size: 17px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  #contactFormContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #contactFormContainer {
+    width: 70%;
+    height: auto;
+  }
+
+  #contactForm h2 {
+    font-size: 25px;
+  }
+
+  #contactForm input[type="email"],
+  #contactForm input[type="text"] {
+    font-size: 20px;
+  }
+
+  #contactForm button {
+    font-size: 20px;
+  }
+
+  .form-group label {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #contactFormContainer {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #closeFormBtn {
+    font-size: 25px;
+  }
+
+  #contactForm h2 {
+    font-size: 20px;
+  }
+
+  #contactForm input[type="email"],
+  #contactForm input[type="text"] {
+    font-size: 18px;
+  }
+
+  #contactForm button {
+    font-size: 18px;
+  }
+
+  .form-group label {
+    font-size: 18px;
+  }
+
+  .custom-checkbox {
+    width: 20px !important;
+    height: 20px;
+  }
+
+  .checkbox-container label {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/*  ****************************** Ḥome Section Conatct Us Form styles ends here ****************************** */
+
+
+/*  ****************************** Service Section Conatct Us Form styles starts here ****************************** */
+
+
+
+.carousel-container {
+  overflow: hidden;
+  width: 70%;
+
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel_item {
+  flex: 0 0 calc(33.33% - 20px);
+
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: #fafafa;
+  background: #ff3147;
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.carousel_item:hover .layer {
+  opacity: 1;
+
+}
+
+.layer img {
+  width: 57px;
+
+  margin-bottom: 10px;
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-top: 36px;
+  margin-bottom: 21px;
+  letter-spacing: 0px;
+  font-size: 24px;
+}
+
+.layer p {
+  margin-bottom: 50px;
+}
+
+.layer a {
+  color: #ff3147;
+  background: #F4F4F4;
+  font-weight: 700;
+  border: 1px solid #F4F4F4;
+}
+
+.layer .btn {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.layer p {
+  font-size: 20px;
+
+}
+
+.layer .arrow {
+  margin-top: 6%;
+  width: 37px;
+}
+
+
+
+.dot-container {
+  display: flex;
+}
+
+.dot-container p {
+  margin: 10px 5px;
+}
+
+@media (max-width: 768px) {
+  .carousel_item {
+    flex: 0 0 50%;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel_item {
+    flex: 0 0 100%;
+
+  }
+}
+
+@media (max-width: 1265px) {
+  .layer h3 {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 21px;
+    letter-spacing: 0px;
+    font-size: 20px;
+  }
+
+  .layer p {
+    font-size: 10px;
+
+  }
+
+  .layer .btn {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+    text-decoration: none;
+  }
+
+  .layer .arrow {
+    margin-top: 6%;
+    width: 37px;
+  }
+}
+
+
+
+
+
+/*  ****************************** Service Section Conatct Us Form styles ends here ****************************** */
+
+
+/* **************************Why Choose us section starts here************************** */
+.box {
+
+
+  padding: 20px 5px;
+}
+
+.box:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: 0.5s;
+}
+
+/* **************************Why Choose us section ends here **************************  */
+
+
+
+
+
+
+/* **************************Project section starts here**************************  */
+
+
+/* Define the active class for background color change */
+.project-container {
+
+  padding: 40px 0px;
+}
+
+
+.active {
+  background-color: #ff3147 !important;
+  color: white !important;
+
+}
+
+
+.project-container img {
+
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+
+
+
+.project-container .left-content div {
+
+  /* background-color: #f4f4f4; */
+  background-color: #f4f4f4;
+  height: 33%;
+  width: 80%;
+  color: black;
+
+
+  padding: 34px 35px 33px 30px;
+
+  border-radius: 1px;
+  text-align: left;
+  cursor: pointer;
+
+}
+
+
+/* **************************Project section ends here **************************  */
+
+/* **************************Growth section starts here************************** */
+.growth-container {
+  background: #f4f4f4;
+  padding: 60px 10px;
+
+}
+
+.growth-container .content div {
+  background: white;
+  text-align: center;
+  padding: 20px 0px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.growth-container .content div:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: 0.3s;
+}
+
+.growth-container .content img {
+  width: 15%;
+}
+
+.growth-container .content h1 {
+  font-size: 5rem;
+}
+
+.growth-container .content p {
+  font-size: 25px;
+  /* line-height: 40px; */
+  width: 100%;
+  text-transform: capitalize;
+}
+
+/* **************************Growth section ends here************************** */
+
+
+
+/* **************************feedback-container starts here ***************************/
+.feedback-container {
+  padding: 40px 0px;
+  margin-bottom: 20px;
+}
+
+.feedback-container .para {
+  font-size: 25px;
+  margin-left: 0%;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.feedback-container .qoutes {
+  background-image: url(images/Quotemarks-left.svg);
+  background-repeat: no-repeat;
+}
+
+/* **************************feedback-container ends here************************** */
+
+/* <!-- ************************** Footer Section starts here ************************** --> */
+.footer-container {
+  background: linear-gradient(135deg, #c40031, #ff3147);
+  color: #ffffff;
+  text-align: center;
+  padding: 130px 0;
+}
+
+.footer-container img {
+  margin-top: 20px;
+}
+
+/* <!-- ************************** Footer Section ends here ************************** --> */
